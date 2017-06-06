@@ -95,6 +95,7 @@ This repository contains a handful of scripts:
 - `aws-secrets-get`
 - `aws-secrets-run-in-env`
 - `aws-secrets-purge-resources`
+- `aws-secrets-copy`
 
 They can be used to set up and maintain a file containing environment
 variables which can then be used by an application running on an Amazon EC2
@@ -133,6 +134,8 @@ then executes another program, with its arguments.
 
 *`aws-secrets-purge-resources`* removes the resources associated with this
 app which were created by `aws-secrets-init-resources`.
+
+*`aws-secrets-copy`* copies secrets from one base name to a new base name (e.g. into a new s3 bucket using a new key).
 
 Examples
 =======
