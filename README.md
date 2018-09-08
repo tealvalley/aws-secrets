@@ -17,7 +17,14 @@ Synopsis
 
 aws-secrets requires [aws-cli](https://aws.amazon.com/cli/) version 1.8 or later.
 
-Installation:
+On OS X, this is easiest with Homebrew:
+```
+% brew install python3 awscli
+% aws --version
+aws-cli/1.14.50 Python/3.6.4 Darwin/16.7.0 botocore/1.9.3
+```
+
+Install aws-secrets:
 ```
 git clone -o github https://github.com/prx/aws-secrets
 cd aws-secrets
@@ -25,7 +32,8 @@ make install
 # (or just copy `bin/*` to somewhere in your PATH)
 ```
 
-One time set up of AWS resources with a base name `my_apps` (base name used to name the bucket, and to send & retrieve):
+The first time you use aws-secets, you must set up of AWS resources with a base name like `my_apps`
+(the `base` name is used to name the bucket, and to send & retrieve):
 ```
 # Usage: aws-secrets-init-resources <?base>
 
